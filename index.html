@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crazy-KFC</title>
+        <link rel="icon" href="image/favicon.ico">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <style>
+
+    .bg-base {
+        background-color: white;
+        background-image: linear-gradient(45deg, transparent 0%, rgba(255, 212, 70, 0.142) 50%, transparent 100%),
+        linear-gradient(-45deg, transparent 0%, rgba(255, 255, 255, 0) 50%, transparent 100%),
+        url("image/kfc.png");
+        background-size: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: none, background-scroll 60s linear infinite reverse;
+    }
+
+    .bg-up {
+        background-image: url("image/backup.png");
+        background-size: cover;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .logo {
+        top: 40px;
+        left: 50px;
+        position: fixed;
+        
+    }
+
+    
+    .container {
+        position: fixed;
+        top: 50px;
+        right: 120px;
+        display: flex;
+    }
+
+    .crazy {
+        font-size: 11rem; /* 调整文字大小 */
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* 光晕效果 */
+        animation: text-animation 1s infinite alternate; /* 动画定义 */
+        font-weight: bold; /* 加粗文字 */
+        font-style: italic; 
+        font-family: FrizQuadrata-Bold; 
+    }
+
+    .crazy-text-con {
+        position: fixed;
+        top: 350px;
+        right: -150px;
+        display: flex;
+    }
+
+    .crazy-text {
+        font-size: 3rem;
+        color: #c7c7c7;
+        font-weight: bold; /* 加粗文字 */
+        font-style: italic; 
+        font-family: FrizQuadrata-Bold;
+        white-space: pre;
+    }
+
+
+    @keyframes background-scroll {
+        0% { background-position: 0% 0%, 100% 0%; }
+        25% { background-position: -50% 50%, 50% -50%; } /* Adjust percentages to control transition */
+        50% { background-position: -100% 0%, 0% -100%; }
+        75% { background-position: -50% -50%, 50% -50%; }
+        100% { background-position: 0% 0%, 100% 0%; }
+    }
+
+    @keyframes text-animation {
+        from {
+            color: #ff0000; /* 红色 */
+        }
+        to {
+            color: #ddda1f; /* 黄绿色 */
+        }
+    }
+
+  </style>
+    </head>
+    <body>
+        
+        <div class="bg-base">
+            <div class="bg-up">
+                <img src="image/logo.png" class="logo">
+                <div class="container">
+                    <h1 class="crazy">Crazy-KFC</h1>
+                </div>
+                <div class="crazy-text-con container">
+                    <p class="crazy-text">   {立志做全网最全的疯四文案收集地}<br><br><-> 网站施工中(っ´Ι`)っ <-></p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
