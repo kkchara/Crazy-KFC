@@ -46,7 +46,7 @@
         position: relative;
         top: 50px;
         right: 50px;
-        display: flex;
+        display: flex;        
     }
 
     .crazy {
@@ -74,6 +74,26 @@
         white-space: pre;
     }
 
+    .out-con {
+        display: inline-block;
+        position: fixed;
+        top: 55%;
+        right: 35%;
+    }
+
+    .typed-out {
+        overflow: hidden;
+        color: #c7c7c7;
+        white-space: nowrap;
+        border-right: .10em solid orange;
+        font-size: 2.1rem;
+        width: 0;
+        animation:
+            typing 3s steps(23, end) forwards,
+            blink 1s infinite;
+      }
+      
+
 
     @keyframes background-scroll {
         0% { background-position: 0% 0%, 100% 0%; }
@@ -92,6 +112,17 @@
         }
     }
 
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+    @keyframes blink {
+    from { border-color: transparent }
+    to { border-color: orange; }
+    }
+      
+
   </style>
     </head>
     <body>
@@ -104,6 +135,9 @@
                 </div>
                 <div class="crazy-text-con container">
                     <p class="crazy-text">   {立志做全网最全的疯四文案收集地}<br><br><-> 网站施工中(っ´Ι`)っ <-></p>
+                </div>
+                <div class="out-con">
+                    <div class="container typed-out">V me 50 V me 50 V me 50</div>
                 </div>
             </div>
         </div>
