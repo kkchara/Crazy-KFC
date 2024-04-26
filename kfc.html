@@ -56,14 +56,14 @@
             </div>
             <div class="container mt-3">
                 <h1 style="font-size: 2em;">WorkSpace</h1>
-                <p>只要 Ctrl+C Ctrl+V</p><br>
+                <p>你甚至不需要 Ctrl+C Ctrl+V</p><br>
                 <ul class="nav nav-pills nav-justified">
                     <li class="nav-item">
                         <button class="nav-link active"
-                            onclick="changeText()">随机一句</button>
+                            onclick="changeText(),changePaste()">随机一句</button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link" id="paste" onclick="changePaste()">复制文案</button>
+                        <button class="nav-link" id="paste" onclick="changePasteSuccess(),copyContent()">复制文案</button>
                     </li>
                     <li class="nav-item">
                         <button class="nav-link" onclick="test()">随机复制</button>
@@ -80,7 +80,7 @@
         <script>
 
             function test() {
-                alert("hello")
+                alert("别戳啦还在开发")
             }
             const docs = [
             "大家好，我是秦始皇，其实我并没有死，我在西安有100000吨黄金，今天肯德基疯狂星期四，我现在需要有人来请我吃29.9块钱8只蛋挞。我明天直接带部队复活，让你统领三军！",
@@ -312,11 +312,20 @@
             }
 
             function changePaste() {
-                if (document.getElementById("paste").innerText == "复制文案"){
-                    document.getElementById("paste").innerText = "复制成功";
-                }
-                else {
-                    document.getElementById("paste").innerText = "复制文案";
+                document.getElementById("paste").innerText = "复制文案";
+            }
+
+            function changePasteSuccess() {
+                document.getElementById("paste").innerText = "复制成功";
+            }
+
+            const copyContent = async () => {
+                let text = document.getElementById('output').innerHTML;
+                try {
+                await navigator.clipboard.writeText(text);
+                console.log('Content copied to clipboard');
+                } catch (err) {
+                console.error('Failed to copy: ', err);
                 }
             }
   
