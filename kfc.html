@@ -55,7 +55,7 @@
                 <a href="index.html"><img src="image/logo.png"></a>
             </div>
             <div class="container mt-3">
-                <h1 style="font-size: 2em;">WorkSpace</h1>
+                <h1 style="font-size: 2em;"><em>Crazy-KFC WorkSpace</em></h1>
                 <p>你甚至不需要 Ctrl+C Ctrl+V</p><br>
                 <ul class="nav nav-pills nav-justified">
                     <li class="nav-item">
@@ -66,7 +66,7 @@
                         <button class="nav-link" id="paste" onclick="changePasteSuccess(),copyContent()">复制文案</button>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link" onclick="test()">随机复制</button>
+                        <button class="nav-link" onclick="changeText(),copyContent(),changePasteSuccess()">随机&复制</button>
                     </li>
                 </ul>
                 <br>
@@ -79,9 +79,6 @@
         </div>
         <script>
 
-            function test() {
-                alert("别戳啦还在开发")
-            }
             const docs = [
             "大家好，我是秦始皇，其实我并没有死，我在西安有100000吨黄金，今天肯德基疯狂星期四，我现在需要有人来请我吃29.9块钱8只蛋挞。我明天直接带部队复活，让你统领三军！",
             "花2000w可以让lex账号解封花200w可以让hololive回归花20w可以给东雪莲上10个月总督花2w可以让女生不用在厕所生孩子花2000可以去华东理工大学买一副耳机花200可以买一副VR眼睛在厕所求导那花50呢？能让我愉快的渡过一个疯狂星期四吗？可以，KFC疯狂星期四鸡排桶仅需49.9！V我50，助我度过一个快乐的疯狂星期四！",

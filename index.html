@@ -75,20 +75,21 @@
 
     .out-con {
         display: inline-block;
+        padding: 0;
         position: fixed;
-        top: 55%;
-        right: 35%;
+        top: 85%;
+        right: 5%;
     }
 
     .typed-out {
         overflow: hidden;
         color: #c7c7c7;
         white-space: nowrap;
-        border-right: .10em solid orange;
-        font-size: 2.1rem;
+        border-right: 0.1em solid orange;
+        font-size: 2rem;
         width: 0;
         animation:
-            typing 3s steps(23, end) forwards,
+            typing 7s steps(26, end) infinite,
             blink 1s infinite;
       }
       
@@ -112,8 +113,11 @@
     }
 
     @keyframes typing {
-        from { width: 0 }
-        to { width: 100% }
+        0% { width: 0; }
+        25% { width: 100%; }
+        50% { width: 100%; }
+        75% { width: 100%; }
+        100% { width: 0; }
       }
       
     @keyframes blink {
@@ -133,10 +137,10 @@
                     <h1 class="crazy">Crazy-KFC</h1>
                 </div>
                 <div class="crazy-text-con container">
-                    <p class="crazy-text">   {立志做全网最全的疯四文案收集地}<br><br><-> 网站施工中(っ´Ι`)っ <-></p>
+                    <p class="crazy-text">   ----立志做全网最全的疯四文案收集地-><br><br><-猛戳左上角logo</p>
                 </div>
                 <div class="out-con">
-                    <div class="container typed-out">V me 50 V me 50 V me 50</div>
+                    <div class="container typed-out">疯狂星期四真的那么有诱惑力？我偏不信，v我50，我去试试</div>
                 </div>
             </div>
         </div>
