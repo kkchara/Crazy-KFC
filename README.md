@@ -1,5 +1,5 @@
 # Crazy-KFC
-## 立志做全网最全的风四文案收集仓库/论坛
+## (应该是)全网最全的风四文案收集仓库/论坛
 
 ### 使用
 - 点击 [这里](https://kkchara.github.io/Crazy-KFC) 或者 [这里](https://kkchara.github.io/Crazy-KFC/kfc.html)，开箱即用
